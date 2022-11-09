@@ -63,10 +63,10 @@ public class ControlFlowExercises {
         int userInt = scanner.nextInt();
         System.out.println("You selected the number: " + userInt);
         System.out.println("Here is your table!");
-        System.out.println("value   | square | cubed");
-        System.out.println("------- | ------ | -----");
+        System.out.println(" value\t| square\t| cubed");
+        System.out.println(" -----\t| ------\t| -----");
         for (int i = 0; i <= userInt; i++) {
-            System.out.printf("%-6d\t|%-6.0f\t|%-6.0f\t\n",i, Math.pow(i, 2), Math.pow(i, 3));
+            System.out.format(" %-6d\t| %-7.0f\t| %-6.0f\t\n",i, Math.pow(i, 2), Math.pow(i, 3));
             }
 
     }
