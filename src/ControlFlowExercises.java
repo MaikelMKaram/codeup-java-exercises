@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -34,18 +36,38 @@ public class ControlFlowExercises {
 //        Display a table of powers.
 
 
-        for (int i = 1; i <= 100; i++){
-            if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz" + i);
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz" + i);
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz" + i);
-            } else {
-                System.out.println(i);
-            }
-        }
+//        for (int i = 1; i <= 100; i++){
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("FizzBuzz" + i);
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz" + i);
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz" + i);
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
 
+
+//        Display a table of powers.
+//
+//        Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("What number would you like to go up to?  ");
+        int userInt = scanner.nextInt();
+        System.out.println("You selected the number: " + userInt);
+        System.out.println("Here is your table!");
+        System.out.println("value   | square | cubed");
+        System.out.println("------- | ------ | -----");
+        for (int i = 0; i <= userInt; i++) {
+            System.out.printf("%-6d\t|%-6.0f\t|%-6.0f\t\n",i, Math.pow(i, 2), Math.pow(i, 3));
+            }
 
     }
 }
