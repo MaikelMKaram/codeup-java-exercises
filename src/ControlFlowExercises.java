@@ -92,6 +92,5 @@ public class ControlFlowExercises {
         } else {
             System.out.println("Your grade of " + userGrade + " means you made an F");
         }
-
     }
 }
