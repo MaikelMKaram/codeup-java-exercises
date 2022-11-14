@@ -39,7 +39,7 @@ public class MethodsExercises {
         return one % two;
     }
 
-    // Recursion (Exercise 1 bonus B)
+    // Exercise 2
     public static int bonusB(int min, int max) {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Pick a # between 1 and 10");
