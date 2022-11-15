@@ -23,9 +23,14 @@ public class Input {
         return scanner.nextLine();
     }
 
-    public boolean yesNo() {
+    public boolean yesNo(){
         System.out.println("\n[Yes/No]");
         String nextLine = this.scanner.nextLine();
         return (nextLine.equalsIgnoreCase("y") || nextLine.equalsIgnoreCase("yes") || nextLine.equalsIgnoreCase("true"));
     }
+
+    public int getInt(int min, int max){
+
+    }
+
 }
