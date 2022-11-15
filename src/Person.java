@@ -1,21 +1,30 @@
 public class Person {
-
-    private String name;
-
-    public Person(){
+    public static void main(String[] args){
+        Person person1 = new Person("Matt");
+//        System.out.println(person1.getName()); //Getter -- not needed due to overloaded constructor -- will still be needed to access name in other Java documents
+        person1.sayHello();
     }
 
-    public String getName(){
+    private String name; //creates private property within person class
+
+    public Person(){ //Default constructor
+    }
+
+    public Person(String name) { //Overloaded constructor
+        this.name = name;
+    }
+
+    public String getName(){ //Getter method
 //TODO: return the person's name
         return this.name;
     }
 
-    public void setName(String name){
+    public void setName(String name){ //Setter method
 //TODO: change the name field to the passed value
         this.name = name;
     }
 
-    public void sayHello(){
+    public void sayHello(){ //Method
 //TODO: print a message to the console using the person's name
         System.out.println("name = " + name);
     }
