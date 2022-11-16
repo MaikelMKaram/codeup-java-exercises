@@ -5,7 +5,7 @@ public class Person {
         person1.sayHello();
     }
 
-    private String name; //creates private property within person class
+    private String name; //creates private property/field within person class
 
     public Person(){ //Default constructor
     }
