@@ -3,7 +3,8 @@ package shapes;
 public class Circle {
     public static void main(String[] args){
         Circle circle = new Circle(3);
-        System.out.println(circle.getArea());
+//        System.out.println("circle.getArea() = " + circle.getArea());
+//        System.out.println("circle.getCircumference() = " + circle.getCircumference());
     }
 
     private double radius;
