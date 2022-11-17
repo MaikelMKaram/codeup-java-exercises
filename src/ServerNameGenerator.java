@@ -8,7 +8,7 @@ public class ServerNameGenerator {
 
     public static String randNum(String[] array){
         Random rand = new Random();
-        int index = rand.nextInt(array.length) +1 ;
+        int index = rand.nextInt(array.length);
         return array[index];
     }
 
