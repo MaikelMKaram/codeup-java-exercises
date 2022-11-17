@@ -43,7 +43,7 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("\nPlease provide a integer");
+        System.out.println("\nPlease choose a number\n");
         int num = scanner.nextInt();
         System.out.println("integer = " + num);
         return num;
