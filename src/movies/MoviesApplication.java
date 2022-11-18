@@ -16,7 +16,7 @@ public class MoviesApplication {
         Movie[] movArray = MoviesArray.findAll();
 
         // userInput call
-        System.out.print("Pick a movie category: \n" +
+        System.out.print("\nPick a movie category: \n" +
                 "0 - exit \n" +
                 "1 - view all movies \n" +
                 "2 - view movies in the animated category\n" +
