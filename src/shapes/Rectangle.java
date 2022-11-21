@@ -33,5 +33,4 @@ public class Rectangle {
     public int getPerimeter(){
         return (length * 2) + (width * 2);
     }
-
 }
