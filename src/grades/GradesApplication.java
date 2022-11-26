@@ -1,11 +1,16 @@
 package grades;
 
+import util.Input;
+
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
 
     public static void main(String[] args) {
+
         HashMap<String, Student> students = new HashMap<>();
+
         Student student1 = new Student("Jack");
         student1.addGrade(100);
         student1.addGrade(90);
@@ -27,10 +32,17 @@ public class GradesApplication {
         student4.addGrade(60);
 
         students.put("Jack_n_Coke",student1);
-        students.put("Jim_Bean",student2);
+        students.put("Jim_Beam",student2);
         students.put("James_on_Ice",student3);
-        students.put("Johnny",student4);
+        students.put("Johnny_Cash",student4);
 
+        for(String key:students.keySet()){
+            System.out.println(key + " - " + students.get(key).getName());
+        }
 
+        Input myInput = new Input(new Scanner(System.in));
+        String answer = myInput.getString();
+        Student selectedStudent = students.get(answer);
+        System.out.println(selectedStudent.getGradeAverage());
     }
 }
